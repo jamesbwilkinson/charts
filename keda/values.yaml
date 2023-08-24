@@ -43,6 +43,8 @@ operator:
   # Learn more in [our documentation](https://keda.sh/docs/latest/operate/cluster/#high-availability).
   replicaCount: 1
   # -- [Affinity] for pod scheduling for KEDA operator. Takes precedence over the `affinity` field
+  # -- Port on which to make KEDA operator available
+  port: 9666
   affinity: {}
     # podAntiAffinity:
     #   requiredDuringSchedulingIgnoredDuringExecution:
